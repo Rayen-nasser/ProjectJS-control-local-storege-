@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main {
+        margin: 40px auto;
+        padding: 20px;
+        width: 600px;
+        background-color: #eee;
+      }
+      .main .text {
+        margin-bottom: 15px;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        font-size: 20px;
+      }
+      .main .text:focus {
+        outline: none;
+      }
+      .main .btns {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+      }
+      .main .btns span {
+        background-color: #009688;
+        text-align: center;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .main .result {
+        text-align: center;
+        background: white;
+        padding: 15px;
+        font-size: 20px;
+      }
+      .main .result span span {
+        color: hsl(174deg 89% 46%);
+        font-weight: 700;
+      }
+      .main .result span .keys{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <input type="text" class="text" placeholder="Local Storage Item" />
+      <div class="btns">
+        <span type="button" class="cheak-Item">cheak Item</span>
+        <span type="button" class="Add-Item">Add Item</span>
+        <span type="button" class="Delete-Item">Delete Item</span>
+        <span type="button" class="Show-Items">Show Items</span>
+      </div>
+      <div class="result">Results Here<span></span></div>
+    </div>
+    <script src="cls.js"></script>
+  </body>
+</html>
